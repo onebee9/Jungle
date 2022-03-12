@@ -1,22 +1,3 @@
-<table>
-<th>
-name
-</th>
-<th>
-Image
-</th>
-<th>
-quantity
-</th>
-<th>
-Price
-</th>
-<th>
-description
-</th>
-<th>
-total
-</th>
 <tr>
 <td>
     <%= line_item.product.name%>
@@ -33,9 +14,4 @@ total
   <td>
     <%= line_item.product.description %>
   </td>
-  <td>
-    <%=@order.total_cents %>
-  </td>
-  
 </tr>
-</table>

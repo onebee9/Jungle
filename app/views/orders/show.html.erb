@@ -10,10 +10,24 @@
   <div>
    <%= @order.email %>
   </div>
-  <%= render @order.line_items %>  
-  <div>
-   
-  </div>
+  <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>Imag</th>
+          <th>quantity</th>
+          <th>Price></th>
+          <th>description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @order.line_items %>  
+      </tbody>
+      <tfoot>
+      Order total : 
+       <%=@order.total_cents %>
+      </tfoot>
+    </table>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
