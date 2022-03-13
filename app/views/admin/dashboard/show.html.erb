@@ -1,3 +1,24 @@
-<h1>Admin::Dashboard#show</h1>
- <%= puts @products %>
-  <%= puts @categories %>
+<h1>Admin Dashboard</h1>
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Group</th>
+        <th>Count</th>
+        <th>Visit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Total Products Count</td>
+        <td><%= @all_products%></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Total Category Count</td>
+        <td><%= @all_categories %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
